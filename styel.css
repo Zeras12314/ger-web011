@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+
+.card {
+  background-color: hsl(225, 100%, 98%);
+  width: 90%;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 19px 38px hsla(245, 75%, 52%, 0.05),
+    0 15px 12px hsla(245, 75%, 52%, 0.08);
+  max-width: 400px;
+  min-width: 337.5px;
+}
+
+.img-container img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+h1,
+.annual h5 {
+  color: hsl(223, 47%, 23%);
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 1.3em;
+}
+
+.text-order {
+  margin: 1.3em 2em;
+}
+
+.text-order p {
+  line-height: 1.6em;
+  margin-top: 1em;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.plan .annual {
+  text-align: left;
+  padding-right: 1.5em;
+}
+
+.plan .annual h5 {
+  font-weight: 900;
+}
+
+.plan .annual h4 {
+  font-size: 0.8em;
+}
+.change h5 a {
+  color: hsl(245, 75%, 52%);
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: "Red Hat Display";
+}
+
+button {
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 10px;
+  padding: 1em 5em;
+  margin-bottom: 1.5em;
+  transition: ease-in 100ms;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.change h5 a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.buttons {
+  padding: 2em 0;
+}
+
+.buttons h4 a {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+}
+
+.bg-image {
+  display: none;
+}
+
+.buttons h4 a:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media (min-width: 900px) {
+  .bg-image {
+    display: block;
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    width: 100%;
+  }
+}
